@@ -63,6 +63,7 @@
     #prev, #next { transition: transform .4s cubic-bezier(.16,1,.3,1), background .4s; }
     #prev:hover, #next:hover { transform: scale(1.25); background: rgba(255,255,255,.25); }
 
+
     /* ===== Languages Section ===== */
 
 .language-card {
@@ -86,6 +87,29 @@
 .progress-bar {
   width: 0;
   transition: width 1.8s cubic-bezier(.19,1,.22,1);
+}
+
+@keyframes rainbowMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.rainbow-text {
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red
+  );
+  background-size: 200% auto;
+  animation: rainbowMove 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
     /* Globe 3D réaliste */
@@ -278,6 +302,40 @@
         <p class="text-gray-400 mb-4">Level A1 — I can only present myself or talk about food</p>
         <div class="w-full bg-white/10 h-2 rounded-full overflow-hidden">
           <div class="progress-bar bg-gradient-to-r from-pink-400 to-cyan-400 h-full rounded-full" data-width="30%"></div>
+        </div>
+      </div>
+
+            <!-- Spanish -->
+      <div class="language-card glass rounded-2xl p-8 text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Bandera_de_Espa%C3%B1a.svg" class="w-16 h-10 mx-auto mb-4" alt="Spain Flag">
+        <h3 class="text-2xl font-bold text- text-yellow-400 mb-2">Spanish</h3>
+        <p class="text-gray-400 mb-4">Level A1 — I can only present myself, idk what i did in school btw</p>
+        <div class="w-full bg-white/10 h-2 rounded-full overflow-hidden">
+          <div class="progress-bar bg-gradient-to-r from-pink-400 to-cyan-400 h-full rounded-full" data-width="20%"></div>
+        </div>
+      </div>
+
+                  <!-- Soon -->
+      <div class="language-card glass rounded-2xl p-8 text-center">
+        <div class="w-16 h-10 mx-auto mb-4 bg-black rounded-md flex items-center justify-center">
+  <span class="rainbow-text text-xl font-bold">?</span>
+</div>
+        <h3 class="text-2xl font-bold text- text-white-400 mb-2">Soon</h3>
+        <p class="text-gray-400 mb-4">Level Unknow — </p>
+        <div class="w-full bg-white/10 h-2 rounded-full overflow-hidden">
+          <div class="progress-bar bg-gradient-to-r from-pink-400 to-cyan-400 h-full rounded-full" data-width="100%"></div>
+        </div>
+      </div>
+
+                        <!-- Soon -->
+      <div class="language-card glass rounded-2xl p-8 text-center">
+                <div class="w-16 h-10 mx-auto mb-4 bg-black rounded-md flex items-center justify-center">
+  <span class="rainbow-text text-xl font-bold">?</span>
+</div>
+        <h3 class="text-2xl font-bold text- text-white-400 mb-2">Soon</h3>
+        <p class="text-gray-400 mb-4">Level Unknow — </p>
+        <div class="w-full bg-white/10 h-2 rounded-full overflow-hidden">
+          <div class="progress-bar bg-gradient-to-r from-pink-400 to-cyan-400 h-full rounded-full" data-width="100%"></div>
         </div>
       </div>
 
